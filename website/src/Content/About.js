@@ -1,13 +1,13 @@
 
 import React, { Component } from 'react'
 
-class Test extends Component {
+class About extends Component {
 
     render() {
         return (
 
             <h1>
-                hello2!
+                wow hey my name is Darren uwu
             </h1>
 
         );
@@ -15,4 +15,4 @@ class Test extends Component {
 
 }
 
-export default Test;
+export default About;
