@@ -7,7 +7,7 @@ class About extends Component {
         return (
 
             <h1>
-                wow hey my name is Darren uwu
+                My name is Darren Vasquez. <br/><br/> This page will be used to give a <i>very</i> brief overview of who I am and what I do.
             </h1>
 
         );

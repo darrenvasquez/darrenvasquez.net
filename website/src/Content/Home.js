@@ -7,7 +7,7 @@ class Home extends Component {
         return (
 
             <h1>
-                hey this is supposed to be the homepage
+                Hello! My name is Darren Vasquez. <br/><br/> I am currently studying Computer Science at Arizona State University. <br/> This website serves as a place for me to showcase my skills and qualifications. <br/><br/> This is a Work in Progress. Built using React.js
             </h1>
 
         );

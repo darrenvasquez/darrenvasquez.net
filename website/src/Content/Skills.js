@@ -7,7 +7,7 @@ class Skills extends Component {
         return (
 
             <h1>
-                darren's brain is massive!!!!!!!!
+                This page will go over the technical skills I possess, as well as maybe any experience I have.
             </h1>
 
         );

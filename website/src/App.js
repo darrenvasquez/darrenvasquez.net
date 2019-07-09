@@ -36,18 +36,10 @@ class App extends Component {
 			<div>
 				<div className='header'>
 					<Menu fluid id="test">
-						<Menu.Item name="Home" active={activeItem === 'Home'} onClick={this.handleItemClick}>
-							<Link id='hi' to="/">Home</Link>
-						</Menu.Item>
-						<Menu.Item name="About" active={activeItem === 'About'} onClick={this.handleItemClick}>
-							<Link id='hi' to="/about">About</Link>
-						</Menu.Item>
-						<Menu.Item name="Courses" active={activeItem === 'Courses'} onClick={this.handleItemClick}>
-							<Link id='hi' to="/courses">Courses</Link>
-						</Menu.Item>
-						<Menu.Item name="Skills" active={activeItem === 'Skills'} onClick={this.handleItemClick}>
-							<Link id='hi' to="/skills">Skills</Link>
-						</Menu.Item>
+						<Menu.Item as={Link} to="/" name="Home" active={activeItem === 'Home'} onClick={this.handleItemClick}/>
+						<Menu.Item as={Link} to="/about" name="About" active={activeItem === 'About'} onClick={this.handleItemClick}/>
+						<Menu.Item as={Link} to="/courses" name="Courses" active={activeItem === 'Courses'} onClick={this.handleItemClick}/>
+						<Menu.Item as={Link} to="/skills" name="Skills" active={activeItem === 'Skills'} onClick={this.handleItemClick}/>
 						<Menu.Menu position='right'>
 							<Menu.Item name='Darren Vasquez'/>
 						</Menu.Menu>
@@ -55,16 +47,7 @@ class App extends Component {
 				</div>
 				<div style={{ padding: "2%" }}>
 					<Switch>
-						{routes.map((route, index) => (
-							// Render more <Route>s with the same paths as
-							// above, but different components this time.
-							<Route
-							key={index}
-							path={route.path}
-							exact={route.exact}
-							component={route.main}
-							/>
-						))}
+						{routes.map((route, index) => ( <Route key={index} path={route.path} exact={route.exact} component={route.main}/>))}
 						<Route component={PageNotFound}/>
 					</Switch>
 				</div>

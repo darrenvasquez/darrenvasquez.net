@@ -7,7 +7,7 @@ class Courses extends Component {
         return (
 
             <h1>
-                wow i took some cool classes, isn't that epic?
+                This page will showcase a list of courses that I have taken at Arizona State University.
             </h1>
 
         );
