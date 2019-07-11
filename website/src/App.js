@@ -34,15 +34,11 @@ class App extends Component {
 		return (
 			<Router>
 			<div>
-				<div className='header'>
-					<Menu fluid id="test">
-						<Menu.Item as={Link} to="/" name="Home" active={activeItem === 'Home'} onClick={this.handleItemClick}/>
-						<Menu.Item as={Link} to="/about" name="About" active={activeItem === 'About'} onClick={this.handleItemClick}/>
-						<Menu.Item as={Link} to="/courses" name="Courses" active={activeItem === 'Courses'} onClick={this.handleItemClick}/>
-						<Menu.Item as={Link} to="/skills" name="Skills" active={activeItem === 'Skills'} onClick={this.handleItemClick}/>
-						<Menu.Menu position='right'>
-							<Menu.Item name='Darren Vasquez'/>
-						</Menu.Menu>
+				<div className='main-header'>
+					<Menu id="test" widths='4' style={{ width: "75vh" }}>
+						{routes.map((route) => ( 
+							<Menu.Item as={Link} to={route.path} name={route.sidebar} active={activeItem === route.sidebar} onClick={this.handleItemClick}/> 
+						))}
 					</Menu>
 				</div>
 				<div style={{ padding: "2%" }}>

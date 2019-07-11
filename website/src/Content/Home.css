@@ -1,0 +1,21 @@
+.home {
+    background-color: rgb(140, 140, 255);
+    text-align: center;
+    font-size: calc(10px + 2vmin);
+    min-height: 75vh;
+    padding: 2%;
+    justify-content: center;
+    position: relative;
+}
+
+.yellow {
+    background-color: #ffff85;
+}
+
+.socials {
+    justify-content: center;
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: violet;
+}

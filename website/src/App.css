@@ -1,13 +1,14 @@
-.header {
+.main-header {
   padding: 1%;
-  padding-left: 10%;
-  padding-right: 10%;
   display: flex;
   font-size: calc(10px + 2vmin);
   background-color: #ff6e6e;
   color: white;
+  justify-content: center;
 }
-
+.test {
+  min-width: 70vh;
+}
 #hi {
   color: black;
 }
