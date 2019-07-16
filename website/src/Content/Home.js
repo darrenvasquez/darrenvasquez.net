@@ -46,7 +46,6 @@ class Home extends Component {
                 <div className='centered'>
                     <div className='yellow'>
                         <Header>
-                            Darren Vasquez
                             <Header as='h2'>Computer Science Student</Header>
                             <Header as='h3'>Georgetown, TX</Header>
                         </Header>

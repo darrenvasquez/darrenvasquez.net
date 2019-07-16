@@ -33,7 +33,10 @@ class App extends Component {
 
 		return (
 			<Router>
-			<div>
+			<div style={{ padding: "1%" }}>
+				<div className='name-header'> {/* Might want to replace this with a stylized text of my name */}
+					Darren Vasquez
+				</div>
 				<div className='main-header'>
 					<Menu id="test" widths='4' style={{ width: "75vh" }}>
 						{routes.map((route) => ( 
