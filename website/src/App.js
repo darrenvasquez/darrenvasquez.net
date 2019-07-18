@@ -1,6 +1,10 @@
 import React, {Component} from 'react';
 import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
 import { Menu } from 'semantic-ui-react';
+
+import Particles from 'react-particles-js';
+import ParticleConfig from './particle-config.json';
+
 import './App.css';
 import 'semantic-ui-css/semantic.min.css';
 
@@ -33,7 +37,10 @@ class App extends Component {
 
 		return (
 			<Router>
-			<div style={{ padding: "1%" }}>
+			<div id='particles'>
+				<Particles params={ParticleConfig} style={{position: 'absolute', top:0, left:0 }}/>
+			</div>
+			<div style={{ padding: "1%", backgroundColor: "#5ebcff" }} id='main'>
 				<div className='name-header'> {/* Might want to replace this with a stylized text of my name */}
 					Darren Vasquez
 				</div>

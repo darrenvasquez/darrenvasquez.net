@@ -2,7 +2,6 @@
   padding: 1%;
   display: flex;
   font-size: calc(10px + 2vmin);
-  background-color: #ff6e6e;
   color: white;
   justify-content: center;
 }
@@ -13,9 +12,12 @@
   padding-top: 1%;
   padding-bottom: 1%;
 }
-.test {
+.menu-component {
   min-width: 70vh;
 }
 #hi {
   color: black;
+}
+#particles {
+	pointer-events: none;
 }
