@@ -1,3 +1,15 @@
 .about {
-    background-color: rgb(140, 140, 255);
+    text-align: center;
+    font-size: calc(4px + 2vmin);
+    min-height: 75vh;
+    padding: 2%;
+    justify-content: center;
+    position: relative;
+}
+
+.about-body {
+    text-align: left;
+    padding-left: 25%;
+    padding-right: 25%;
+    line-height: calc(8px + 2vmin);
 }

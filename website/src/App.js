@@ -45,7 +45,7 @@ class App extends Component {
 					Darren Vasquez
 				</div>
 				<div className='main-header'>
-					<Menu id="test" widths='4' style={{ width: "75vh" }}>
+					<Menu id="menu-component" widths='4' style={{ width: "65vh" }}>
 						{routes.map((route) => ( 
 							<Menu.Item as={Link} to={route.path} name={route.sidebar} active={activeItem === route.sidebar} onClick={this.handleItemClick}/> 
 						))}

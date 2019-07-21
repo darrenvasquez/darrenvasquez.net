@@ -1,0 +1,8 @@
+.courses {
+    text-align: center;
+    font-size: calc(10px + 2vmin);
+    min-height: 75vh;
+    padding: 2%;
+    justify-content: center;
+    position: relative;
+}
