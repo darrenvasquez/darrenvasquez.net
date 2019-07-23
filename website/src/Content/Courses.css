@@ -6,3 +6,11 @@
     justify-content: center;
     position: relative;
 }
+.course-list {
+    justify-content: left;
+    text-align: left;
+    font-size: calc(4px + 2vmin);
+    padding-top: 2%;
+    padding-left: 33%;
+    padding-right: 33%;
+}

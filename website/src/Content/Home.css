@@ -6,6 +6,9 @@
     justify-content: center;
     position: relative;
 }
+.centered {
+    justify-content: center;
+}
 
 .socials {
     justify-content: center;

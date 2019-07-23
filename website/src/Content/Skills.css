@@ -6,3 +6,11 @@
     justify-content: center;
     position: relative;
 }
+.skills-list {
+    justify-content: left;
+    text-align: left;
+    font-size: calc(4px + 2vmin);
+    padding-top: 2%;
+    padding-left: 40%;
+    padding-right: 40%;
+}

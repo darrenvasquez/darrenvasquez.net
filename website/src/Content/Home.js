@@ -1,7 +1,7 @@
 
 import React, { Component } from 'react'
 
-import { Header, Popup, Icon } from 'semantic-ui-react';
+import { Header, Popup, Icon, Image } from 'semantic-ui-react';
 
 import './Home.css';
 
@@ -44,6 +44,8 @@ class Home extends Component {
 
             <div className='home'>
                 <div className='centered'>
+                    <Image src='https://avatars3.githubusercontent.com/u/42012825' size='medium' circular centered /> {/* CHANGE THE IMAGE URL EVENTUALLY */}
+                    <br/><br/>
                     <div className='yellow'>
                         <Header>
                             <Header as='h2'>Computer Science Student</Header>
