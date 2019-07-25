@@ -13,3 +13,7 @@
     padding-right: 25%;
     line-height: calc(8px + 2vmin);
 }
+
+#link {
+    color: #dbb34f;
+}

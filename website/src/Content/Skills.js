@@ -12,9 +12,11 @@ class Skills extends Component {
 
             <div className='skills'>
 
-                Skills
+                Skills <br/>
 
-                <br/><br/>
+                <h3>Click on a skill for details!</h3>
+
+                <br/>
 
                 <div className='skills-list'>
                     <List bulleted>

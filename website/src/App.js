@@ -40,7 +40,7 @@ class App extends Component {
 			<div id='particles'>
 				<Particles params={ParticleConfig} style={{position: 'absolute', top:0, left:0 }}/>
 			</div>
-			<div style={{ padding: "1%", backgroundColor: "#5ebcff" }} id='main'>
+			<div style={{ padding: "1%", backgroundColor: "#2ea8ff" }} id='main'>
 				<div className='name-header'> {/* Might want to replace this with a stylized text of my name */}
 					Darren Vasquez
 				</div>
@@ -56,6 +56,7 @@ class App extends Component {
 						{routes.map((route, index) => ( <Route key={index} path={route.path} exact={route.exact} component={route.main}/>))}
 						<Route component={PageNotFound}/>
 					</Switch>
+					<br/>
 				</div>
 			</div>
 			</Router>

@@ -11,7 +11,7 @@ class About extends Component {
             <div className='about'>
                 My name is Darren Vasquez. <br/><br/><br/>
                 <div className='about-body'>
-                    I was born in Phoenix, Arizona in 1997 and lived there for most of my life. I have always been interested in how technology works, whether that be through taking apart broken electronics as a kid or programming plugins for my now defunct <a href='https://darcraft.net'>Minecraft Server</a>. <br/><br/>
+                    I was born in Phoenix, Arizona in 1997 and lived there for most of my life. I have always been interested in how technology works, whether that be through taking apart broken electronics as a kid or programming plugins for my now defunct <a id='link' href='https://darcraft.net'>Minecraft Server</a>. <br/><br/>
 
                     I am currently attending Arizona State University pursuing a bachelors degree in Computer Science. I plan to graduate in May 2020.<br/><br/>
 
