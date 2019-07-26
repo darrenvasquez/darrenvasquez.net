@@ -1,13 +1,18 @@
 
 import React, { Component } from 'react'
 
-import {List} from 'semantic-ui-react'
+import {List, Modal, Button} from 'semantic-ui-react'
 
 import './Skills.css'
+
+import skills from './Data/skills.json'
 
 class Skills extends Component {
 
     render() {
+
+        const items = skills.skills;
+
         return (
 
             <div className='skills'>
@@ -16,17 +21,27 @@ class Skills extends Component {
 
                 <h3>Click on a skill for details!</h3>
 
-                <br/>
-
                 <div className='skills-list'>
                     <List bulleted>
-                        <List.Item> Java</List.Item>
-                        <List.Item> React.js</List.Item>
-                        <List.Item> C / C++</List.Item>
-                        <List.Item> Python</List.Item>
-                        <List.Item> HTML/CSS/JavaScript</List.Item>
-                        <List.Item> Git/GitHub</List.Item>
-                        <List.Item> Adobe Photoshop</List.Item>
+                        {items.map((item, i) =>
+                            
+                            <Modal closeIcon size='small' id={i} trigger={<List.Item>{item.name}</List.Item>}>
+                                <Modal.Header>{item.name}</Modal.Header>
+                                <Modal.Content>
+                                    <Modal.Description>
+                                        Here are some projects that I have worked on utilizing {item.name}: <br/><br/>
+                                        {item.projects.map((project, i) =>
+                                            <div>{project} <br/><br/></div>
+                                            )}
+                                    </Modal.Description>
+                                </Modal.Content>
+                                {item.link ? <Modal.Actions>
+                                    <Button positive icon='arrow right' labelPosition='right' content={item.linkName}></Button>
+                                </Modal.Actions> : null}
+                                
+                            </Modal>
+                            
+                        )}
                     </List>
                 </div>
 

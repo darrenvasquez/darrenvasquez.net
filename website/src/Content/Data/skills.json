@@ -1,0 +1,63 @@
+{
+    "skills": [
+        {
+            "name": "Java",
+            "projects": [
+                "Worked on multiple school projects implementing things like GUIs, sorting algorithms, data structures and games.",
+                "Implemented a network analyzation tool application utilizing Swing to take input of \"Nodes\" - given their parents and children, an organized list of all possible paths the user could take from beginning to end are displayed.",
+                "Made plugins for an online video game utilizing the Bukkit and Spigot API."
+            ],
+            "link": "",
+            "linkName": ""
+        },
+        {
+            "name": "React.js",
+            "projects": [
+                "Managed and updated my school's software development club to provide members with access to vital club information, including upcoming events and social media platforms.",
+                "Created a static React website commemorating DarCraft - the Minecraft Server I owned from November 2011 to May 2019.",
+                "Created this React website, utilizing React Router DOM over Summer 2019 in order to grow my skillset."
+            ],
+            "link": "",
+            "linkName": ""
+        },
+        {
+            "name": "C / C++",
+            "projects": [
+                "Implemented various sorting and traversal algorithms as projects for my Data Structures and Algorithms course.",
+                "Implemented various programs that utilized threads and semaphores for my Operating Systems course.",
+                "Implemented various parsers that was able to make sense of a proprietary set of programming instructions, store the instructions and ultimately run it."
+            ],
+            "link": "",
+            "linkName": ""
+        },
+        {
+            "name": "HTML / CSS / JavaScript",
+            "projects": [
+                "Created multiple Bootstrap websites for high school projects in substitute of another method of information delivery in order to begin learning how to program before university.",
+                "Created multiple webpages for DarCraft - the Minecraft Server I owned from November 2011 to May 2019 - to deliver information to players.",
+                "Also utilized these languages in my React.js projects."
+            ],
+            "link": "",
+            "linkName": ""
+        },
+        {
+            "name": "Git / GitHub",
+            "projects": [
+                "Utilized GitHub for a group project in class, allowing my teammates and I to work on different sections of the project without difficulty.",
+                "When managing my university software development's club website, created a fork of our current repository to test changes. Also wrote documentation for future officers to easily understand the repository.",
+                "Began uploading my class projects in private repositories in order to keep track of changes and allow me to work on projects on multiple systems."
+            ],
+            "link": "",
+            "linkName": ""
+        },
+        {
+            "name": "Adobe Photoshop",
+            "projects": [
+                "Designed and created multiple projects for Graphic Design I, II, and III in High School, including mock commissions and mock contract work for companies.",
+                "Designed and created flyers, brochures and programs for events for family and friends."
+            ],
+            "link": "",
+            "linkName": ""
+        }
+    ]
+}
