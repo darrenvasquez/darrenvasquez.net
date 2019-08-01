@@ -1,30 +1,47 @@
 
 import React, { Component } from 'react'
 
-import { List } from 'semantic-ui-react';
+import { List, Modal, Button } from 'semantic-ui-react';
 
 import './Courses.css';
+
+import courses from './Data/courses.json'
 
 class Courses extends Component {
 
     render() {
+
+        const items = courses.courses;
+
         return (
 
             <div className='courses'>
 
-                This page showcases the critical courses that I have taken at Arizona State University.
+                Courses <br/>
 
-                <br/><br/>
+                <h3>Click on a course for details!</h3>
 
-                <div className='course-list'>
+                <div className='course-list'> 
                     <List bulleted>
-                        <List.Item> Object Oriented Program & Data</List.Item>
-                        <List.Item> Computer Org & Assembly Language Programming</List.Item>
-                        <List.Item> Logic in Computer Science</List.Item>
-                        <List.Item> Data Structures & Algorithms</List.Item>
-                        <List.Item> Intro to Artificial Intelligence</List.Item>
-                        <List.Item> Intro to Theoretical Computer Science</List.Item>
-                        <List.Item> Operating Systems</List.Item>
+                        {items.map((item, i) =>
+                            
+                            <Modal closeIcon size='small' id={i} trigger={<List.Item><a rel="noopener norefferer" href="# " onclick="return false;" id='list-item'>{item.name}</a></List.Item>}>
+                                <Modal.Header>{item.name}</Modal.Header>
+                                <Modal.Content>
+                                    <Modal.Description>
+                                        Here are some projects that I have worked on utilizing {item.name}: <br/><br/>
+                                        {item.projects.map((project, i) =>
+                                            <div>{project} <br/><br/></div>
+                                            )}
+                                    </Modal.Description>
+                                </Modal.Content>
+                                {item.link ? <Modal.Actions>
+                                    <Button positive icon='arrow right' labelPosition='right' content={item.linkName}></Button>
+                                </Modal.Actions> : null}
+                                
+                            </Modal>
+                            
+                        )}
                     </List>
                 </div>
 

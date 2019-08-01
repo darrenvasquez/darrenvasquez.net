@@ -40,7 +40,7 @@ class App extends Component {
 			<div id='particles'>
 				<Particles params={ParticleConfig} style={{position: 'absolute', top:0, left:0 }}/>
 			</div>
-			<div style={{ padding: "1%", backgroundColor: "#2ea8ff" }} id='main'>
+			<div style={{ padding: "1%", backgroundColor: "#808080" }} id='main'>
 				<div className='name-header'> {/* Might want to replace this with a stylized text of my name */}
 					Darren Vasquez
 				</div>

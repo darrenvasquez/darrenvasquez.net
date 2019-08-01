@@ -25,7 +25,7 @@ class Skills extends Component {
                     <List bulleted>
                         {items.map((item, i) =>
                             
-                            <Modal closeIcon size='small' id={i} trigger={<List.Item>{item.name}</List.Item>}>
+                            <Modal closeIcon size='small' id={i} trigger={<List.Item><a rel="noopener norefferer" href="# " onclick="return false;" id='list-item'>{item.name}</a></List.Item>}>
                                 <Modal.Header>{item.name}</Modal.Header>
                                 <Modal.Content>
                                     <Modal.Description>
