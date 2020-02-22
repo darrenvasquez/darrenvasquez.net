@@ -163,7 +163,7 @@ export default function App() {
 								<CardHeader className={classes.header}
 									avatar={<Avatar aria-label="avatar" className={classes.avatar}>1</Avatar>}
 									title="Intel Corporation"
-									subheader="Oct 2019 - ????"
+									subheader="Oct 2019 - Present"
 								/>
 								<Typography variant="body2" component="p">
 									Utilize C# and SQL to query, interpret, and post data on lithography tools.
