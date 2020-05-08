@@ -5,6 +5,7 @@ import CloseIcon from '@material-ui/icons/Close';
 import TwitterIcon from '@material-ui/icons/Twitter';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import GitHubIcon from '@material-ui/icons/GitHub';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
 
 const useStyles = makeStyles(theme => ({
 	root: {
@@ -80,7 +81,7 @@ export default function App() {
 			<Typography variant='h2' align='center'>Darren Vasquez</Typography>
 			<Container maxwidth='md' className={classes.intro}>
 				<Typography variant='h5' className={classes.paper}>
-					<center>Work in Progress! <br/>Meant to be a simple website showcasing a bit about me.</center>
+					<center>Work in Progress</center>
 				</Typography>
 			</Container>
 			<Container maxwidth='md' className={classes.socials}>
@@ -92,6 +93,9 @@ export default function App() {
 				  </IconButton>
 				  <IconButton size="medium" aria-label="close" color="inherit" onClick={() => window.open("https://github.com/darrenvasquez")}>
 				  	<GitHubIcon fontSize="medium"/>
+				  </IconButton>
+				  <IconButton size="medium" aria-label="close" color="inherit" onClick={() => window.open("https://www.linkedin.com/in/darrenvasquez13/")}>
+				  	<LinkedInIcon fontSize="medium"/>
 				  </IconButton>
 			</Container>
 			<Container maxWidth='md' className={classes.root}>
@@ -163,7 +167,7 @@ export default function App() {
 								<CardHeader className={classes.header}
 									avatar={<Avatar aria-label="avatar" className={classes.avatar}>1</Avatar>}
 									title="Intel Corporation"
-									subheader="Oct 2019 - Present"
+									subheader="Oct 2019 - Apr 2020"
 								/>
 								<Typography variant="body2" component="p">
 									Utilize C# and SQL to query, interpret, and post data on lithography tools.
